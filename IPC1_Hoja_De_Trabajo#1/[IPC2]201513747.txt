@@ -1,0 +1,8 @@
+¿Qué entiende como "commit"?
+Que uno puede guardar un cambio que se realizó o se cometió.
+
+¿Qué entiende como "merge"?
+Es la forma de unir dos ramas diferente.
+
+¿Cuál es la diferencia entre "Pull" y "Push"?
+Que uno puede quitar y el otro sube un cambio ralizado. 

@@ -136,7 +136,13 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_boton2ActionPerformed
 
     private void boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1ActionPerformed
-    
+     int numero;
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        if (numero % 2 == 0) {
+            JOptionPane.showMessageDialog(null, "El numero es par");
+        } else {
+            JOptionPane.showMessageDialog(null, "El numero es impar");
+        }
     }//GEN-LAST:event_boton1ActionPerformed
 
     private void boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton3ActionPerformed

@@ -158,7 +158,29 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_boton1ActionPerformed
 
     private void boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton3ActionPerformed
-
+  int numero1, numero2, resp = 0;
+        String operador;
+        numero1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        operador = JOptionPane.showInputDialog("Ingrese uno de los siguentes operadores (+,-,*,/)");
+        numero2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        if (operador.equals("+")) {
+            resp = numero1 + numero2;
+        } else {
+            if (operador.equals("-")) {
+                resp = numero1 - numero2;
+            } else {
+                if (operador.equals("*")) {
+                    resp = numero1 * numero2;
+                } else {
+                    if (operador.equals("/")) {
+                        resp = numero1 / numero2;
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Operador incorrecto");
+                    }
+                }
+            }
+        }
+        JOptionPane.showMessageDialog(null, "El resultado es de: " + resp);
     }//GEN-LAST:event_boton3ActionPerformed
 
     private void boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton4ActionPerformed

@@ -132,11 +132,23 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton2ActionPerformed
-     
+        int numero;
+        int contador = 0;
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        for (int x = 1; x <= numero; x++) {
+            if (numero % x == 0) {
+                contador++;
+            }
+        }
+        if (contador == 2) {
+            JOptionPane.showMessageDialog(null, "El numero es primo");
+        } else {
+            JOptionPane.showMessageDialog(null, "El numero no es primo");
+        }
     }//GEN-LAST:event_boton2ActionPerformed
 
     private void boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1ActionPerformed
-     int numero;
+        int numero;
         numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
         if (numero % 2 == 0) {
             JOptionPane.showMessageDialog(null, "El numero es par");
@@ -146,11 +158,11 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_boton1ActionPerformed
 
     private void boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton3ActionPerformed
-       
+
     }//GEN-LAST:event_boton3ActionPerformed
 
     private void boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton4ActionPerformed
-    
+
     }//GEN-LAST:event_boton4ActionPerformed
 
     /**

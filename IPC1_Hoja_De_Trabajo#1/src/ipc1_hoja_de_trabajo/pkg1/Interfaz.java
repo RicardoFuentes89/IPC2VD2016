@@ -184,7 +184,15 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_boton3ActionPerformed
 
     private void boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton4ActionPerformed
-
+  int numero, promedio = 0;
+        int contador;
+        contador = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad números que va a ingresar"));
+        for (int x = 0; x< contador; x++) {
+            numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+           promedio+=numero;
+        }
+        promedio=promedio/contador;
+        JOptionPane.showMessageDialog(null,"El Promedio es de: "+promedio);
     }//GEN-LAST:event_boton4ActionPerformed
 
     /**

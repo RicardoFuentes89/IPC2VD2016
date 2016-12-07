@@ -180,7 +180,7 @@ public class Interfaz extends javax.swing.JFrame {
                 }
             }
         }
-        JOptionPane.showMessageDialog(null, "El resultado es de: " + resp);
+        JOptionPane.showMessageDialog(null, "El resultado es de: " + resp+" #201513747");
     }//GEN-LAST:event_boton3ActionPerformed
 
     private void boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton4ActionPerformed
